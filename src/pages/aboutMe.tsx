@@ -1,22 +1,24 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import frame from "../assets/Frame.png";
 import firstVideo from "../assets/aboutMe1.mp4";
 import secondVideo from "../assets/sky.mp4";
 import "../style/aboutMe.css";
 
-export default function AboutMe() {
-  const [video, setVideo] = useState(firstVideo);
-  // Managing content with an object
-  const [content, setContent] = useState({
+const AboutMe: React.FC = () => {
+  const [video, setVideo] = useState<string>(firstVideo);
+  const [content, setContent] = useState<{
+    title: string;
+    description: string;
+  }>({
     title: "",
     description: "",
   });
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const videoElement = videoRef.current;
     if (videoElement) {
-      (videoElement as HTMLVideoElement).onended = () => {
+      videoElement.onended = () => {
         if (video === firstVideo) {
           setVideo(secondVideo);
           // Update content for the second video
@@ -29,8 +31,8 @@ export default function AboutMe() {
           // Optionally handle what happens after the second video ends
         }
       };
-      (videoElement as HTMLVideoElement).loop = video === secondVideo;
-      (videoElement as HTMLVideoElement).play();
+      videoElement.loop = video === secondVideo;
+      videoElement.play();
     }
   }, [video]);
 
@@ -51,4 +53,6 @@ export default function AboutMe() {
       </div>
     </div>
   );
-}
+};
+
+export default AboutMe;
