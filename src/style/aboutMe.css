@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+.video-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 600px;
+    width: 600px;
+    left: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffa825; /* Ensure text color contrasts with video */
+    z-index: 3; /* Ensures text is visible over the video */
+  }
+  
+.video-title{
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px; /* Adjust as needed */
+    font-weight: bold;
+    text-align: center;
+}
+.video-description {
+    z-index: 3; /* Make sure text appears above the video */
+    text-align: center;
+  }
+.extra-video-description{
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px; /* Adjust as needed */
+    font-weight: bold;
+    text-align: center;
+     
+}

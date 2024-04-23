@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+.frame-container {
+    position: absolute;
+    width: 100%; /* Or set to the desired width */
+    height: 100%; /* Or set to the desired height */
+    left: 0%;
+    top: 0%;
+    background-color: black;
+  }
+  
+.frame-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; /* Ensure the frame is above the video */
+    width: auto;
+    height: auto;
+  }
+  
+.frame-image img {
+    width: 100%; /* Adjust based on your frame's aspect ratio */
+    height: 100vh; /* Adjust based on your frame's aspect ratio */
+    display: block; /* Remove space below the image */
+    object-fit: cover;
+  }
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    overflow: hidden; /* Add this line to hide the scroll */
+  }
+  
+.background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area, might crop the video */
+  }
+.container-in-frame {
+    position: absolute; /* Positioning it within the frame-container */
+    width: 54%; /* Half the width of its parent */
+    height: 68%; /* Half the height of its parent */
+    color: black;
+    top: 15%; /* Center vertically */
+    left: 23%; /* Center horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-image: url("./assets/overlay1.jpg"); 
+    background-size: cover;
+    z-index: 2; /* Ensure the content is above the video */
+ }
+
+ .container-in-notePad{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 85px;
+  padding-left: 15px;
+  padding-right: 41px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+
+ }
+ .sub-container {
+  /* background-color: antiquewhite; */
+  position: relative;
+ /* background-color: rgb(241, 198, 118); */
+ text-align:bottom;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+
+ }
+/* place the git in the center */
+ .questionMark{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  object-fit: contain;
+  
+   }
+
+  .AboutMe{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 30px;
+    /* font-weight: bold; */
+    font-weight: 600;
+    color: rgb(250, 35, 35);
+    text-shadow: 2px 2px 5px #1e1e1e;
+  }
+
+  .phone{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    object-fit: contain;
+  }
+
+  .contact{
+    margin-top:0 ;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 30px;
+    /* font-weight: bold; */
+    font-weight: 600;
+    color: rgb(43, 43, 43);
+    text-shadow: 2px 2px 5px #1e1e1e;
+  }
+
+  .code{
+    width: 70%;
+    height: 50%;
+  }
+  .projects{
+    margin-top:0 ;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 30px;
+    /* font-weight: bold; */
+    font-weight: 600;
+    color: rgb(255, 65, 255);
+    text-shadow: 2px 2px 5px #1e1e1e;
+  }
+
+  .insta{
+    width: 50%;
+    height: 50%;
+  }
+  
+  .git{
+    width: 70%;
+    height: 50%;
+  }
+.github{
+  margin-top: 0;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 30px;
+  /* font-weight: bold; */
+  font-weight: 600;
+  color: rgb(255, 106, 0);
+  text-shadow: 2px 2px 5px #1e1e1e;
+
+}
+.socials{
+  margin-top: 0;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 30px;
+  /* font-weight: bold; */
+  font-weight: 600;
+  color: rgb(0, 204, 255);
+  text-shadow: 2px 2px 5px #1e1e1e;
+
+}
+  .game{
+    width: 70%;
+    height: 50%;
+    text-align: center; 
+    display: flex;
+    object-fit: contain;
+   
+  }
+
+  .gametext{
+    margin-top: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 30px;
+    /* font-weight: bold; */
+    font-weight: 600;
+    color: rgba(0, 187, 12, 0.725);
+    text-shadow: 2px 2px 4px #1e1e1e;
+    /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00e7);
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    text-shadow: 2px 2px 1px #1e1e1e;
+    text-overflow: ellipsis; */
+  }
+
+.t-shirts{
+  margin-top: 0;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 30px;
+  /* font-weight: bold; */
+  font-weight: 600;
+  color: rgba(251, 255, 0, 0.725);
+  text-shadow: 2px 2px 4px #1e1e1e;
+}
+.meg{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  object-fit: contain;
+}
+.megtext{
+  margin-top: 0;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 30px;
+  /* font-weight: bold; */
+  font-weight: 600;
+  color: rgba(0, 255, 255, 0.725);
+  text-shadow: 2px 2px 4px #1e1e1e;
+}
+
+
+
+
+
