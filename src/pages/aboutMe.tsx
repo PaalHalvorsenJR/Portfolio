@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import frame from "../assets/Frame.png";
 import firstVideo from "../assets/aboutMe1.mp4";
 import secondVideo from "../assets/sky.mp4";
